@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mechatronics Spring 2023</title>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link href="mechatronicds/s23/undergradStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    
+<h1 class="display-1 text-center"> Mechatronics Spring 23</h1>
+
+<!--	See help here: https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top sticky-top" style="background-color: #FFD580;">
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky-top">-->
+        <a class="navbar-brand" href="#"></a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Illinois_at_Chicago_circle_logo.svg/1200px-University_of_Illinois_at_Chicago_circle_logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="UIC Picture">
+      <a class="navbar-brand" href="#"> Top/About</a>
+        
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+			<!--   All Material  !-->
+      <li class="nav-item active">
+        <a class="nav-link" href="#FullTable">All Material<span class="sr-only">(current)</span></a>
+      </li>
+    <!--   All Material end  !-->
+		<!--   download/links starts  !-->
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="NavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads/Links</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="mechatronics/s23/Labs.zip"><b>All Labs (by May 23)</b></a>
+              <a class="dropdown-item" href="mechatronics/s23/Lectures.zip"><b>All Lectures (by May 23)</b></a>
+			  <a class="dropdown-item" href="https://tiny.cc/mechatronix2"><b>YouTube Playlist</b></a>
+<!--		  <a class="dropdown-item" href="https://pab47.github.io/robotics_archive.html"><b>Archived pages</b></a>-->
+        </div>
+      </li>
+			<!--   download/links ends  !-->
+				<!--   other course  !-->
+		 <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="NavbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All courses</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="http://tiny.cc/legged"><b>Legged Robotics</b></a>
+              <a class="dropdown-item" href="http://tiny.cc/robotics"><b>Robotics MATLAB</b></a> 
+              <a class="dropdown-item" href="http://tiny.cc/roboticspy"><b>Robotics Python</b></a>
+              <a class="dropdown-item" href="http://tiny.cc/mujoco"><b>MuJoCo C</b></a>
+			  <a class="dropdown-item" href="http://tiny.cc/mujocopy"><b>MuJoCo Python</b></a>
+			   <a class="dropdown-item" href="http://tiny.cc/mechatronix"><b>Mechatronics</b></a>
+        </div>
+      </li>
+		<!--   other course ends  !-->
+		<!--   My webpage starts  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="https://pab47.github.io">Pranav Bhounsule (homepage)</a>
+      </li>
+		<!--   My webpage ends  !-->
+    </ul>
+  </div>
+</nav>
+    
+<br><br>
+    <div id ="header" align="left" class="col-xl-12">
+        
+<p> <b>About:</b> A first course in mechatronics. The course deals mainly with electronics: resistors, capacitors, diodes, transistors, digital circuits (logic gates, flip-flops, timers), data acquisition, sensors, and actuators, and a very little design (through a lab and a final project). The course involves theory (see YouTube videos/notes) that is supplemented by TinkerCAD-based labs (a free circuit simulator and 3D design tool) and hardware labs and a hands-on project on creating an interactive animatronics. </p>
+
+		<p>
+		If you are an <b> instructor</b> who is interested in this course you might benefit from the following:
+			<ul>
+				<li> <b>Textbook:</b> The course content is taken from <a href= "https://mechatronics.colostate.edu/">  Intro. to Mechatronics and Measurement by David Alciatore</a>. The book offers a rich collection of homework problems which were also used as assignment (please email me, pranav AT uic dot edu, if you want hw problems) </li>
+				<li> <b>Labs:</b>The lab content (which is hard to find for such a course) was created by me using the course content. If you follow the curriculum below, the labs occur after the necessary course content/hw is covered, which helps the learning outcomes. A detailed breakdown of costs for the labs will be updated soon </li>
+				<li> <b>Project:</b> A final project on creating an animatronics combines skills in design and electronics. The project is fairly open-ended, but requires students to put many skills that they learnt in the course to test.</li>
+			</ul>  
+			</p>
+	
+	
+	
+<!--	emphasizes learning through extensive numerical simulations and animations. Mathematical modeling and theory is explained to build the necessary intuition to develop numeric code. Python code provides examples on how to program the physics, develop controllers, and animate the system. This material is supplemented with MuJoCo (version 2.2.1) in python (a free physics simulator). MuJoCoPy material may be accessed here: <a href="tiny.cc/mujocopy">tiny.cc/mujocopy</a>. I recommend installing atom IDE and python 3. Instructions can be found here:<a href=" https://pab47.github.io/mujocopy.html#lec2">https://pab47.github.io/mujocopy.html#lec2</a>. If you are looking for Robotics with MATLAB see this link: <a href="tiny.cc/robotics">tiny.cc/robotics</a>.</b></p> -->
+	 </div>
+	
+		<!--- All material -->
+  
+    
+    <div align="center" class="col-xl-12" id="main">
+    <table style="width:75%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+			<th style="text-align: center"><big><big>Week</big></big></th>
+			<th style="text-align: center"><big><big>Lec</big></big></th>
+            <th style="text-align: center"><big><big>Topic</big></big></th>
+            <th style="text-align: center"><big><big>Youtube</big></big></th>
+            <th style="text-align: center"><big><big>Notes</big></big></th>
+        </tr>
+        
+<!--Contents from MATLAB start here  -->
+ <tr style="background-color: #f0f0f9">
+    <td> Week1</td>
+    <td> Lec0</td>
+    <td> Syllabus</td>
+    <td align="center"> <a href="https://youtu.be/Ju1e5IM6djI">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec1</td>
+    <td> Basic electrical components, resistor, capacitor, inductor </td>
+    <td align="center"> <a href="https://youtu.be/EVt2C_9aQNA">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec1_electrical_elements.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec2</td>
+    <td> Kirchhoffs current/voltage law</td>
+    <td align="center"> <a href="https://youtu.be/yD43Acb_f1E">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec2_kirchhoffs_laws.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> Week2</td>
+    <td> Lec3</td>
+    <td> Analyzing circuits with resistors/capacitors/inductors</td>
+    <td align="center"> <a href="https://youtu.be/l9uZ7pXZcDs">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec3_alternating_sources.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec4</td>
+    <td> Practical things: Breadboard, Multimeter, Soldering, Static charge </td>
+    <td align="center"> <a href="https://youtu.be/MVuhCejduHQ">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec4_practical_consideration.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec5</td>
+    <td> Characteristics of a good measurement system, linearity & bandwidth</td>
+    <td align="center"> <a href="https://youtu.be/CJp1z83eeww">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec5_system_response.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td style="color:red"> Lab1</td>
+    <td style="color:red"> TinkerCAD</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_TinkerCAD.pdf">Lab</a></td>
+</tr>
+ 
+<tr>
+    <td> Week3</td>
+    <td> Lec6</td>
+    <td> Junction and Zener Diode, Voltage regulator, Rectification circuit </td>
+    <td align="center"> <a href="https://youtu.be/JZV4OxeqCmY">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec6_diode1.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec7</td>
+    <td> Light emitting diode, photodiode, analyzing circuits with diode</td>
+    <td align="center"> <a href="https://youtu.be/Z3QJHHSgEmI">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec7_diode2.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td style="color:red"> Lab2</td>
+    <td style="color:red"> Resistors (Voltage/Current divider)</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_resistor.pdf">Lab</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> Week4</td>
+    <td> Lec8</td>
+    <td> Bipolar Junction Transistor, Cutoff/Active/Saturation mode</td>
+    <td align="center"> <a href="https://youtu.be/PZ2N7f0uITE">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec8_transistors1.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec9</td>
+    <td> Bipolar Junction Transistor, Example problems</td>
+    <td align="center"> <a href="https://youtu.be/6MgHi-dLFaE">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec9_transistors2.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td style="color:red"> Lab3</td>
+    <td style="color:red"> Capacitors (High/Low Pass filter)</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_capacitors.pdf">Lab</a></td>
+</tr>
+ 
+<tr>
+    <td> Week5</td>
+    <td> Lec10a</td>
+    <td> Introduction to amplifiers</td>
+    <td align="center"> <a href="https://youtu.be/RXT9UkPKuX4">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec10_opamp1.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec10b</td>
+    <td> Op-amp LM741 pin outs and assumptions of an ideal op-amp</td>
+    <td align="center"> <a href="https://youtu.be/HMlMj2sehXY">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec10c</td>
+    <td> Derivation of inverting amplifier</td>
+    <td align="center"> <a href="https://youtu.be/1zQzvhk-1rs">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec11a</td>
+    <td> Derivation of non-inverting amplifier</td>
+    <td align="center"> <a href="https://youtu.be/msJZpgUgnH4">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec11_opamp2.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec11b</td>
+    <td> Opamp as a differentiator and an integrator</td>
+    <td align="center"> <a href="https://youtu.be/B5_PMXUTDz0">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec11c</td>
+    <td> Opamp as a summer</td>
+    <td align="center"> <a href="https://youtu.be/R3oxHHaAIkU">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td style="color:red"> Lab4</td>
+    <td style="color:red"> Diodes</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_diode.pdf">Lab</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> Week6</td>
+    <td> Lec12a</td>
+    <td> Opamp to measure the difference between input voltages</td>
+    <td align="center"> <a href="https://youtu.be/P3t77rKssCs">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec12_opamp3.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec12b</td>
+    <td> Opamp as an instrumentation amplifier</td>
+    <td align="center"> <a href="https://youtu.be/EHk61VzMBRI">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec12c</td>
+    <td> Opamp as a comparator and to sample and hold</td>
+    <td align="center"> <a href="https://youtu.be/vtAbC3qtxTU">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec13</td>
+    <td> Real op-amps specs sheet</td>
+    <td align="center"> <a href="https://youtu.be/KV2dMxorsw0">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec13_opamp4.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td style="color:red"> Lab5</td>
+    <td style="color:red"> Bipolar Junction Transistor</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_transistors.pdf">Lab</a></td>
+</tr>
+ 
+<tr>
+    <td> Week7</td>
+    <td> Lec14a</td>
+    <td> Introduction to digital circuits</td>
+    <td align="center"> <a href="https://youtu.be/dJDic6q-1dI">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec14_Combinational_Logic1.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec14b</td>
+    <td> Logic Gates</td>
+    <td align="center"> <a href="https://youtu.be/g_6pbFQJh8s">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec14c</td>
+    <td> Examples of combining Logic Gates</td>
+    <td align="center"> <a href="https://youtu.be/cHOgr2X0_BE">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec15</td>
+    <td> Logic Gates, Boolean algebra and problems</td>
+    <td align="center"> <a href="https://youtu.be/V9UUj0ihSwA">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec15_Combinational_Logic2.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td style="color:red"> Lab6</td>
+    <td style="color:red"> Integrated Circuits</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_integrated_circuit.pdf">Lab</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> Week8</td>
+    <td> Lec16a</td>
+    <td> Logic Gates, world problems</td>
+    <td align="center"> <a href="https://youtu.be/oI0CZOyB0yc">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec16_Combinational_Logic3.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec16b</td>
+    <td> Logic Gates, Boolean expression from truth table</td>
+    <td align="center"> <a href="https://youtu.be/REQ7x5jq3A4">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td style="color:red"> Lab7</td>
+    <td style="color:red"> Soldering</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_soldering.pdf">Lab</a></td>
+</tr>
+ 
+<tr>
+    <td> Week9</td>
+    <td> Lec17</td>
+    <td> Sequential Logic, Flip Flops and Latches</td>
+    <td align="center"> <a href="https://youtu.be/vmupqENBduI">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec17_Sequential_Logic.pdf">Lec</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec18</td>
+    <td> Applications of Flip Flops</td>
+    <td align="center"> <a href="https://youtu.be/JGnuvM_1E-4">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec18_Applications_FlipFlop1.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td style="color:red"> Lab8</td>
+    <td style="color:red"> Arduino (hardware)</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_Arduino.pdf">Lab</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> Week10</td>
+    <td> Lec19a</td>
+    <td> Decade counter, Decoder, Schmitt Trigger</td>
+    <td align="center"> <a href="https://youtu.be/8v3cFQluzaI">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec19_Applications_FlipFlop2.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td> Lec19b</td>
+    <td> 555 Timer</td>
+    <td align="center"> <a href="https://youtu.be/5dtWo4GSzMg">Video</a></td>
+    <td align="center">None</td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td> Lec20a</td>
+    <td> Data Sampling</td>
+    <td align="center"> <a href="https://youtu.be/gvwdMiUobRI">Video</a></td>
+    <td align="center"> <a href="s23/Lectures/Lec20_DataAcquisition.pdf">Lec</a></td>
+</tr>
+ 
+<tr>
+    <td> </td>
+    <td style="color:red"> Lec20b</td>
+    <td style="color:red"> Project on Interactive Animatronics</td>
+    <td align="center"> <a href="https://youtu.be/bAuB8DRCJQo">Video</a></td>
+    <td align="center" style="color:red"> <a href="s23/Labs/project.pdf">Lab</a></td>
+</tr>
+ 
+<tr style="background-color: #f0f0f9">
+    <td> </td>
+    <td style="color:red"> Lab9</td>
+    <td style="color:red"> Design and 3D printing</td>
+    <td align="center" style="color:red">None</td>
+    <td align="center" style="color:red"> <a href="s23/Labs/lab_design.pdf">Lab</a></td>
+</tr>
+
+<!--Contents from MATLAB end here -->
+           
+        
+    </table> </div>
+    
+<br>
+	<!-- Comment here-->
+	<br>
+		<ul>
+		<li> This table of contents was generated automatically using MATLAB</li>
+        <li>Comments/Suggestions to Pranav A. Bhounsule (pranav AT uic.edu) </li>
+		<li>Last updated: March 19, 2023</li>
+      </ul>
+		 <br> 
+		 <!-- line break-->
+	
+	  <!--Comment here-->
+<!-- Default Statcounter code for Robotics Course
+pab47.github.io -->
+	<!-- Default Statcounter code for Robotics Python
+https://pab47.github.io/robotics/roboticspy.html -->
+<script type="text/javascript">
+var sc_project=12821169; 
+var sc_invisible=1; 
+var sc_security="246f5fbe"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12821169/0/246f5fbe/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<!-- End of Statcounter Code -->
+    
+    
+</body>
+</html>
